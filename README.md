@@ -12,21 +12,21 @@ To run the script :
 
 ### Adding more apps (make sure your know the command-line name of the app to initiate it)
 To add more apps to the scripts :
- - add line under these two commands:
- `t1 = Thread(target=app1, args=(('google-chrome',)) )`
- `t2 = Thread(target=app1 , args=(('code',)) )`
+ - add line under these two commands: <br>
+ `t1 = Thread(target=app1, args=(('google-chrome',)) )` <br>
+ `t2 = Thread(target=app1 , args=(('code',)) )` <br>
 
 e.g `` t3 = Thread(target=app1, args=(('firefox',)) ) ``
 
-- finally initialise your script thread by adding it under these two commands:
- `t1.start()`
- `t2.start()`
+- finally initialise your script thread by adding it under these two commands: <br>
+ `t1.start()` <br>
+ `t2.start()` <br>
 
 e.g `` t3.start()``
 
 ### Your final Script should look like this :
 
-# A simple script that opens your daily essential application with one simple command
+##### A simple script that opens your daily essential application with one simple command
 import os
 from threading import Thread
 
@@ -35,15 +35,15 @@ def app1(my_app_name):
   os.system(my_app_name)
 
 
-def main():
- t1 = Thread(target=app1, args=(('google-chrome',)) )
- t2 = Thread(target=app1 , args=(('code',)) )
- t3 = Thread(target=app1, args=(('firefox',)) )
- t1.start()
- t2.start()
- t3.start()
+def main(): <br>
+ t1 = Thread(target=app1, args=(('google-chrome',)) ) <br>
+ t2 = Thread(target=app1 , args=(('code',)) ) <br>
+ t3 = Thread(target=app1, args=(('firefox',)) ) <br>
+ t1.start() <br>
+ t2.start() <br>
+ t3.start() <br>
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': <br>
  main()
  
