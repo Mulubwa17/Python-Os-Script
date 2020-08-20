@@ -10,7 +10,7 @@ To run the script :
 - run command python App.py if you are using python2,this will open your desired application
 - run command python3 App.py if you are using python3,this will open your desired application
 
-### Adding more apps
+### Adding more apps (make sure your know the command-line name of the app to initiate it)
 To add more apps to the scripts :
  - add line under these two commands:
  `t1 = Thread(target=app1, args=(('google-chrome',)) )`
